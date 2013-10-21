@@ -1,3 +1,3 @@
-@Tictock.module 'Entities', (Entities, App, Backbone, Marionette, $, _) ->
+@TicTock.module 'Entities', (Entities, App, Backbone, Marionette, $, _) ->
 
   class Entities.Collection extends Backbone.Collection
