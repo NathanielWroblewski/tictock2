@@ -3,14 +3,13 @@
   class Show.Logo extends Marionette.ItemView
 
     template: 'logo/show/templates/show_logo'
-    tagName: 'span'
 
     initialize: ->
       @width = @calculateWidth()
       @half  = @width * .5
       @face  = '#CFF09E'
       @hands = '#3B8686'
-      @canvas = Raphael 'clock', @width, @width
+      @canvas = Raphael 'logo-region', @width, @width
       @clockface = @canvas.circle @half, @half, @width * .475
       $(window).on 'resize', @rerender
 
